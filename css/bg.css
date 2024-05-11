@@ -1,0 +1,51 @@
+/* background settings for section */
+
+#section-hero {
+    background: url(../images/background/screenshots.jpg) top center fixed;
+}
+
+#section-banner {
+    background: url(../images/background/screenshots-2.jpg) top center fixed;
+}
+
+@-webkit-keyframes myanim {
+    0% {
+        background-position: 0px;
+    }
+    100% {
+        background-position: 2400px 1792px;
+    }
+    /* set this to the width of the image */
+}
+
+/* media query */
+
+@media only screen and (min-device-width: 768) and (max-device-width: 1024) and (orientation: portrait) {
+    section {
+        -webkit-background-size: auto 100% !important;
+        -moz-background-size: auto 100% !important;
+        -o-background-size: auto 100% !important;
+        background-size: auto 100% !important;
+        background-attachment: scroll !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #subheader {
+        -webkit-background-size: cover !important;
+        -moz-background-size: cover !important;
+        -o-background-size: cover !important;
+        background-size: cover !important;
+        background-attachment: scroll !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    section {
+        -webkit-background-size: auto 100% !important;
+        -moz-background-size: auto 100% !important;
+        -o-background-size: auto 100% !important;
+        background-size: auto 100% !important;
+        background-attachment: scroll !important;
+    }
+}
